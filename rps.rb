@@ -1,0 +1,1 @@
+w="rps";p(h=$_[0])+","+%w(Draw Win Lose)[w.index(h)-w.index(w[rand 3])]
