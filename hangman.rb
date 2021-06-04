@@ -1,9 +1,8 @@
 w,g,n=$*,[],3;x=w.sample
 loop{
-    b=false
-    p x.chars.map{|c| if g.include? c then c else ?_ end}.join+" "+n.to_s; 
+    p"#{x.chars.map{|c|(g.include? c)?c:?_}.join},#{n}" 
     break if n<0 or x.chars.all?(&g.method(:include?))
-    n-=1 if b
     $stdin.gets; 
-    g<<$_[0]
+    g<<(c=$_[0])
+    n-=1 if !x.include?c
 }
