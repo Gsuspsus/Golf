@@ -1,0 +1,1 @@
+require 'prime';(1..1000).select{|n|n.prime?&&n.digits.join.to_i.prime?&&(p n)}

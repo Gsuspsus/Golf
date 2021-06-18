@@ -1,0 +1,1 @@
+while gets{{lc:$_.split(?\\).length,wc:$_.split.length,cc:$_.length}}
